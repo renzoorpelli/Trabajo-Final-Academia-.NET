@@ -1,0 +1,38 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.ClienteViewModel
+
+@if (Model is not null)
+{
+    <div class="align-content-center">
+
+        <div class="mb-3">
+            <h1 class="display-4">Eliminar  Cliente:</h1>
+            <hr />
+        </div>
+        <form method="post">
+            @Html.HiddenFor(cliente => cliente.Id)
+            <div>
+                <div class="card text-center card text-bg-danger mb-3">
+                    <div class="card-header">
+                        Identificador Producto : @Model.Id
+                    </div>
+                    <div class="card-body">
+
+                        <p class="card-text">Razón social : @Model.RazonSocial</p>
+                        <p class="card-text">CUIT :  @Model.Cuit</p>
+                        <p class="card-text">Mail : @Model.Mail</p>
+                        <p class="card-text">Domicilio :  @Model.Domicilio</p>
+
+                        <input type="submit" class="btn btn-danger" value="Eliminar Cliente" />
+                        <a asp-area="" asp-controller="maker" asp-action="index" class="btn btn-primary">Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+}
+else
+{
+    <p>No hay registros para eliminar :(</p>
+    <a class="btn btn-success" asp-area="" asp-controller="cliente" asp-action="index">Volver al inicio</a>
+}

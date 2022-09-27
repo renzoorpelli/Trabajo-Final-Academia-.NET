@@ -1,0 +1,45 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.ClienteViewModel
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+@if(Model is not null){
+    @Html.HiddenFor(cliente => cliente.Id)
+    <div class="align-content-center">
+        <div class="mb-3">
+            <h1 class="display-4">Editar Cliente: </h1>
+            <hr />
+        </div>
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Razón Social: </label>
+                <input type="text" class="form-control" asp-for="RazonSocial">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Cuit: </label>
+                <input type="number" class="form-control" asp-for="Cuit">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Domicilio: </label>
+                <input type="text" class="form-control" asp-for="Domicilio">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mail: </label>
+                <input type="email" class="form-control" asp-for="Mail">
+            </div>
+            <div class="mb-3">
+                <div class="mb-2">
+                    <input type="submit" value="Guardar" class="btn btn-success form-control" />
+                </div>
+                <div class="mb-2">
+                    <a class="btn btn-warning form-control" asp-area="" asp-controller="cliente" asp-action="index"> Volver al dashboard</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+}else{
+    <p>El cliente no es valido</p>
+        <a class="btn btn-warning form-control" asp-area="" asp-controller="cliente" asp-action="index"> Volver al dashboard</a>
+}

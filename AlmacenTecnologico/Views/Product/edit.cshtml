@@ -1,0 +1,54 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.ProductoViewModel
+@{
+    ViewData["Title"] = "Editar Producto";
+
+    List<SelectListItem> listaTipos = ViewData["TipoProducto"] as List<SelectListItem>;
+    List<SelectListItem> listaFabricantes = ViewData["Fabricantes"] as List<SelectListItem>;
+}
+@if(listaTipos != null && listaFabricantes != null){
+    @Html.HiddenFor(producto => producto.Id)
+    <div class="align-content-center">
+    <div class="mb-3">
+        <h1 class="display-4">Editar Producto: </h1>
+        <hr />
+    </div>
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Modelo: </label>
+            <input type="text" class="form-control" asp-for="Modelo">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tipo Producto: </label>
+            @Html.DropDownListFor(d => d.IdTipoProducto, listaTipos, "Seleccionar Tipo Producto", new {@class = "form-control"})
+        </div
+        <div class="mb-3">
+            <label class="form-label">Fabricante: </label>
+            @Html.DropDownListFor(d => d.IdFabricante, listaFabricantes, "Seleccionar Fabricante", new {@class = "form-control"})
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Precio: </label>
+            <input type="number" class="form-control" asp-for="Precio">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Url Imagen: </label>
+            <input type="url" class="form-control" asp-for="UrlImagen">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Cantidad Stock: </label>
+            <input type="number" class="form-control" asp-for="Cantidad">
+        </div>
+        <div class="mb-3">
+            <div class="mb-2">
+                <input type="submit" value="Guardar" class="btn btn-success form-control" />
+            </div>
+            <div class="mb-2">
+                <a class="btn btn-warning form-control" asp-area="" asp-controller="producttype" asp-action="index"> Volver al dashboard</a>
+            </div>
+        </div>
+    </form>
+
+</div>
+}else{
+    <p>Hubo un error al cargar el alta de productos</p>
+    <a  class="btn btn-success" asp-area="" asp-controller="product" asp-action="index"> Volver al dashboard principal</a>
+}

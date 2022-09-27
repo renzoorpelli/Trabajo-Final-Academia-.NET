@@ -1,0 +1,61 @@
+﻿@model List<AlmacenTecnologico.Models.ViewModel.ClienteViewModel>
+@{
+    ViewData["Title"] = "Panel Clientes Eliminados";
+}
+<div class="text-center">
+    <h1 class="display-4">Panel Clientes Eliminados</h1>
+    <hr />
+</div>
+<div class="mb-3">
+    @if (Model != null && Model.Count > 0)
+    {
+        <form method="post">
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>#</th>
+                    <th>Razón Social</th>
+                    <th>Cuit</th>
+                    <th>Domicilio</th>
+                    <th>Mail</th>
+                    <th colspan="2">Estado</th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.RazonSocial</td>
+                        <td>@item.Cuit</td>
+                        <td>@item.Domicilio</td>
+                        <td>@item.Mail</td>
+                        <td>@item.Estado</td>
+                        <td>
+                            @if (User.IsInRole("admin"))
+                            {
+                                <input type="submit" class="btn btn-success" asp-area="" asp-controller="cliente" asp-action="recover" asp-route-id="@item.Id" value="Recuperar"/>     
+                            }
+                            else{
+                                <button class="btn btn-secondary" onclick="alert('Debes ser administrador para realizar esta acción')"></button>
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        </form>
+    }
+    else
+    {
+        <div class="text-center">
+            <p>No hay clientes en el sistema :(</p>
+        </div>
+        <div>
+            <a class="btn btn-success" asp-area="" asp-controller="cliente" asp-action="add">Agregar un cliente</a>
+            @if (User.IsInRole("admin"))
+            {
+                <a class="btn btn-warning" asp-area="" asp-controller="product" asp-action="recover">Recuperar Clientes</a>
+            }
+        </div>
+    }
+
+</div>

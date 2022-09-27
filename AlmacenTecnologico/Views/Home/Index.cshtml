@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    @if (User.IsInRole("admin"))
+    {
+        <h1 class="display-5">Panel Administrador Administrador</h1>
+    }
+    else
+    {
+        <h1 class="display-5">Panel Administrador Empleado</h1>
+    }
+    <hr />
+</div>
+<div class="container text-center mb-3">
+    <div class="row row-cols-2 row-cols-lg-2 g-2 g-lg-2">
+        <div class="col">
+            <div class="p-3 border bg-success rounded">
+                <a asp-area="" asp-controller="product" asp-action="index" class="btn text-light fs-5">Productos</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-primary rounded">
+                <a asp-area="" asp-controller="maker" asp-action="index" class="btn text-light fs-5">Fabricantes</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-warning rounded">
+                <a asp-area="" asp-controller="order" asp-action="index" class="btn text-light fs-5">Pedidos</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-danger rounded">
+                <a asp-area="" asp-controller="cliente" asp-action="index" class="btn text-light fs-5">Clientes</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-primary rounded">
+                <a asp-area="" asp-controller="producttype" asp-action="index" class="btn text-light fs-5">Tipos de porducto a la venta</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-success rounded">
+                <a asp-area="" asp-controller="employee" asp-action="index" class="btn text-light fs-5">Panel Empleados</a>
+            </div>
+        </div>
+    </div>
+</div>

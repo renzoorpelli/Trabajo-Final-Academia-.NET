@@ -1,0 +1,39 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.PedidoViewModel
+@{
+    ViewData["Title"] = "Editar Pedido";
+
+    List<SelectListItem> listaEmpleados = ViewData["Empleados"] as List<SelectListItem>;
+    List<SelectListItem> listaClientes = ViewData["Clientes"] as List<SelectListItem>;
+}
+@if(listaEmpleados != null && listaClientes != null){
+    @Html.HiddenFor(pedido => pedido.Id)
+    <div class="align-content-center">
+    <div class="mb-3">
+        <h1 class="display-4">Editar Pedido: </h1>
+        <hr />
+    </div>
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Cliente: </label>
+            @Html.DropDownListFor(d => d.ClienteId, listaClientes, "Seleccionar el cliente", new {@class = "form-control"})
+        </div
+        <div class="mb-3">
+            <label class="form-label">Empleado que realizo el pedido: </label>
+            @Html.DropDownListFor(d => d.EmpleadoId, listaEmpleados, "Seleccionar al empleado", new {@class = "form-control"})
+        </div>
+        <div class="mb-3"></div>
+        <div class="mb-3">
+            <div class="mb-2">
+                <input type="submit" value="Guardar" class="btn btn-success form-control" />
+            </div>
+            <div class="mb-2">
+                <a class="btn btn-warning form-control" asp-area="" asp-controller="order" asp-action="index"> Volver al dashboard</a>
+            </div>
+        </div>
+    </form>
+
+</div>
+}else{
+    <p>Hubo un error al cargar el editar el pedido</p>
+    <a  class="btn btn-success" asp-area="" asp-controller="product" asp-action="index"> Volver al dashboard principal</a>
+}

@@ -1,0 +1,27 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.FabricanteViewModel
+@{
+    ViewData["Title"] = "Agregar Fabricante";
+}
+<div class="align-content-center">
+
+    <div class="mb-3">
+        <h1 class="display-4">Agregar Fabricantes: </h1>
+        <hr />
+    </div>
+    @Html.HiddenFor(x => x.Id)
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Nombre Fabricante: </label>
+            <input type="text" class="form-control" asp-for="Nombre">
+        </div>
+        <div class="mb-3">
+            <div class="mb-2">
+                <input type="submit" value="Guardar" class="btn btn-success form-control" />
+            </div>
+            <div class="mb-2">
+                <a class="btn btn-warning form-control" asp-area="" asp-controller="maker" asp-action="index"> Volver al dashboard</a>
+            </div>
+        </div>
+    </form>
+
+</div>

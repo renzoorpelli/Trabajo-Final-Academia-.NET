@@ -1,0 +1,32 @@
+﻿@model AlmacenTecnologico.Models.TipoProducto
+@{
+    ViewData["Title"] = "Agregar TipoProdcuto";
+
+    List<SelectListItem> lista = ViewData["ListaCategorias"] as List<SelectListItem>;
+}
+<div class="align-content-center">
+
+    <div class="mb-3">
+        <h1 class="display-4">Agregar Tipo Producto: </h1>
+        <hr />
+    </div>
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Nombre Tipo: </label>
+            <input type="text" class="form-control" asp-for="Nombre">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Categoria: </label>
+            @Html.DropDownListFor(d => d.IdCategoria, lista, "Seleccionar Categoria", new {@class = "form-control"})
+        </div>
+        <div class="mb-3">
+            <div class="mb-2">
+                <input type="submit" value="Guardar" class="btn btn-success form-control" />
+            </div>
+            <div class="mb-2">
+                <a class="btn btn-warning form-control" asp-area="" asp-controller="producttype" asp-action="index"> Volver al dashboard</a>
+            </div>
+        </div>
+    </form>
+
+</div>

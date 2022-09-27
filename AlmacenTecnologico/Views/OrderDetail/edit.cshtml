@@ -1,0 +1,41 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.DetallePedidoViewModel
+@{
+    ViewData["Title"] = "Editar Detalle Pedido";
+
+    List<SelectListItem> listaProductos = ViewData["Productos"] as List<SelectListItem>;
+}
+@if (listaProductos is not null || Model is not null)
+{
+    <div class="align-content-center">
+        <div class="mb-3">
+            <h1 class="display-4">Generar Pedido: </h1>
+            <hr />
+        </div>
+        <form method="post">
+            @Html.HiddenFor(od => od.IdDetalle)
+            @Html.HiddenFor(od => od.PedidoId)
+            <div class="mb-3">
+                <label class="form-label">Producto: </label>
+                @Html.DropDownListFor(d => d.ProductoId, listaProductos, "Seleccionar Producto", new {@class = "form-control"})
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Cantidad: </label>
+                <input type="number" class="form-contrrol" asp-for="Cantidad">
+            </div>
+            <div class="mb-3">
+                <div class="mb-2">
+                    <input type="submit" value="Guardar" class="btn btn-success form-control" />
+                </div>
+                <div class="mb-2">
+                    <a class="btn btn-warning form-control" asp-area="" asp-controller="orderdetail" asp-action="index"> Volver al dashboard</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+}
+else
+{
+    <p>Hubo un error al cargar el generar los detalles del pedido</p>
+    <a class="btn btn-success" asp-area="" asp-controller="orderdetail" asp-action="index"> Volver al dashboard principal</a>
+}
