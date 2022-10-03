@@ -1,0 +1,52 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.UsuarioViewModel
+
+@{
+    List<SelectListItem> listaRoles = ViewData["ListarRoles"] as List<SelectListItem>;
+    List<SelectListItem> lista = ViewData["ListarEmpleados"] as List<SelectListItem>;
+}
+
+@if(listaRoles is not null && Model is not null && lista is not null){
+    <div class="align-content-center">
+        @Html.HiddenFor(u => u.Id)
+        <div class="mb-3">
+            <h1 class="display-4">Editar Usuario: </h1>
+            <hr />
+        </div>
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Nombre Usuario: </label>
+                <input type="text" class="form-control" asp-for="NombreUsuario" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Contraseña: </label>
+                <input type="password" class="form-control" asp-for="Password" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rol: </label>
+                @Html.DropDownListFor(d => d.idRol, listaRoles, "Seleccionar Rol", new {@class = "form-control"})
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Empleado: </label>
+                @Html.DropDownListFor(d => d.IdPersona, lista, "Seleccionar Empleado", new {@class = "form-control"})
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="termsCondition" value="yes" checked required>
+                <label class="form-check-label" for="mySwitch">Acepto la responsabilidad de otorgarle permisos al usuario</label>
+            </div>
+            <div class="mb-3">
+                <div class="mb-2">
+                    <input type="submit" value="Guardar" class="btn btn-success form-control" />
+                </div>
+                <div class="mb-2">
+                    <a class="btn btn-warning form-control" asp-area="" asp-controller="user" asp-action="index"> Volver al dashboard</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+}else{
+    <div>
+        <p>Ocurrió un error al cargar el formulario.</p>
+        <a class="btn btn-success" asp-controller="user" asp-action="index">Volver al dashboard</a>
+    </div>
+}

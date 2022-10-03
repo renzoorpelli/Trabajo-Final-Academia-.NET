@@ -1,0 +1,31 @@
+﻿@model AlmacenTecnologico.Models.Usuario
+<body>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4 bg-secondary rounded-3" style="margin-top:150px; padding-top:50px; padding-bottom:50px;">
+            <h1 class="display-6 text-white">Iniciar Sesión</h1>
+            <hr class="bg-white"/>
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewBag.Message
+                </div>
+            }
+            <form method="post">
+                <div class="mb-3" style="margin-top:10px">
+                    <label for="username" class="form-label text-white">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="emailHelp" asp-for="NombreUsuario">
+
+                </div>
+                <div class="mb-3" style="margin-top:10px">
+                    <label for="password" class="form-label text-white">Password</label>
+                    <input type="password" class="form-control" id="password" asp-for="Password">
+                </div>
+                <div style="margin-top:10px">
+                    <input type="submit" class="btn btn-primary form-control" value="Iniciar Sesión"></input>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>

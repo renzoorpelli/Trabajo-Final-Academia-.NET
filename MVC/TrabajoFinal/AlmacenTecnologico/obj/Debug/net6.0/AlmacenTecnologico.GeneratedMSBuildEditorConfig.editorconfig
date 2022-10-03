@@ -1,0 +1,212 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AlmacenTecnologico
+build_property.RootNamespace = AlmacenTecnologico
+build_property.ProjectDir = C:\Users\renzo\Documents\develop\SOFTTEK\TP'S\Nueva carpeta\TrabajoFinal\AlmacenTecnologico\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\renzo\Documents\develop\SOFTTEK\TP'S\Nueva carpeta\TrabajoFinal\AlmacenTecnologico
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Access/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Access/LoginStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luU3RhdHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Access/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXHJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Cliente/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxhZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Cliente/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxkZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Cliente/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxlZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Cliente/recover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxyZWNvdmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Employee/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Employee/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Employee/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Employee/recover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVccmVjb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Maker/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrZXJcYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Maker/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrZXJcZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Maker/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrZXJcZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Maker/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Maker/Recover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrZXJcUmVjb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/OrderDetail/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/OrderDetail/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/OrderDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Order/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Order/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Order/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Order/recover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJccmVjb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/ProductType/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFR5cGVcYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/ProductType/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFR5cGVcZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/ProductType/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFR5cGVcZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/ProductType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFR5cGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/ProductType/recover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFR5cGVccmVjb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Product/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Product/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxkZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Product/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxlZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Product/recover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxyZWNvdmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/User/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxhZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/User/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxkZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/User/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxlZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/User/recover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxyZWNvdmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/User/registerRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxyZWdpc3RlclJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/renzo/Documents/develop/SOFTTEK/TP'S/Nueva carpeta/TrabajoFinal/AlmacenTecnologico/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vazpjedp02

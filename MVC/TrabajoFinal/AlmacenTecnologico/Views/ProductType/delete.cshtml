@@ -1,0 +1,37 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.TipoProductoViewModel
+
+@if (Model is not null)
+{
+    <div class="align-content-center">
+
+        <div class="mb-3">
+            <h1 class="display-4">Eliminar  Tipo Producto:</h1>
+            <hr />
+        </div>
+        <form method="post">
+            @Html.HiddenFor(l => l.Id)
+            <div>
+                <div class="card text-center card text-bg-danger mb-3">
+                    <div class="card-header">
+                        Identificador Tipo Producto : @Model.Id
+                    </div>
+                    <div class="card-body">
+
+                        <p class="card-text">Nombre: @Model.Nombre</p>
+                        <p class="card-text">Identificador Categoria : @Model.Categoria.Id</p>
+                        <p class="card-text">Categoria: @Model.NombreCategoria</p>
+
+                        <input type="submit" class="btn btn-danger" value="Eliminar" />
+                        <a asp-area="" asp-controller="producttype" asp-action="index" class="btn btn-primary">Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+}
+else
+{
+    <p>No hay registros para eliminar :(</p>
+    <a class="btn btn-success" asp-area="" asp-controller="product" asp-action="index">Volver al inicio</a>
+}

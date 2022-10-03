@@ -1,0 +1,45 @@
+﻿@model AlmacenTecnologico.Models.ViewModel.EmpleadoViewModel
+@{
+    ViewData["Title"] = "Editar Empleado";
+}
+<div class="align-content-center">
+
+    <div class="mb-3">
+        <h1 class="display-4">Editar Empleado: </h1>
+        <hr />
+    </div>
+    @if (Model is not null)
+    {
+        <form method="post">
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewBag.Message
+                </div>
+            }
+
+            <div class="mb-3">
+                <label class="form-label">Nombre Empleado: </label>
+                <input type="text" class="form-control" asp-for="Nombre" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Apellido Empleado: </label>
+                <input type="text" class="form-control" asp-for="Apellido" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">DNI Empleado: </label>
+                <input type="text" class="form-control" asp-for="DNI" maxlength="8" required>
+            </div>
+            <div class="mb-3">
+                <div class="mb-2">
+                    <input type="submit" value="Guardar" class="btn btn-success form-control" />
+                </div>
+                <div class="mb-2">
+                    <a class="btn btn-warning form-control" asp-area="" asp-controller="employee" asp-action="index"> Volver al dashboard</a>
+                </div>
+            </div>
+        </form>
+    }else{
+        <p>El empleado no es valido</p>
+    }
+</div>

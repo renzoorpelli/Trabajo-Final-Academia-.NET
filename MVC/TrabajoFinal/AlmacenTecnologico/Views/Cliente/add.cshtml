@@ -1,0 +1,39 @@
+﻿@model AlmacenTecnologico.Models.Cliente
+@{
+    ViewData["Title"] = "Agregar Cliente";
+}
+<div class="align-content-center">
+    @Html.AntiForgeryToken()
+    <div class="mb-3">
+        <h1 class="display-4">Agregar Cliente: </h1>
+        <hr />
+    </div>
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Razón Social: </label>
+            <input type="text" class="form-control" asp-for="RazonSocial" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Cuit: </label>
+            <input type="number" class="form-control" asp-for="Cuit" maxlength="11" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Domicilio: </label>
+            <input type="text" class="form-control" asp-for="Domicilio" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mail: </label>
+            <input type="email" class="form-control" asp-for="Mail" required>
+        </div>
+        <div class="mb-3">
+            <div class="mb-2">
+                <input type="submit" value="Guardar" class="btn btn-success form-control" />
+            </div>
+            <div class="mb-2">
+                <a class="btn btn-warning form-control" asp-area="" asp-controller="cliente" asp-action="index"> Volver al dashboard</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+

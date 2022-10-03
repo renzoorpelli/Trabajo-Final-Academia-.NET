@@ -1,0 +1,24 @@
+﻿@if (!User.Identity.IsAuthenticated)
+{
+    <div class="col-xs-1">
+        <h1 class="display-5">No has iniciado sesión</h1>
+        <p>Intente nuevamente más tarde.</p>
+        <a class="btn btn-success" asp-area="" asp-controller="access" asp-action="login">Iniciar Sesión</a>
+    </div>
+}
+else if (User.IsInRole("usuarioNuevo"))
+{
+    <div class="col-xs-1">
+        <h1 class="display-5">Usuario pendiente de aprobación</h1>
+        <p>Intente nuevamente más tarde.</p>
+        <a class="btn btn-success" asp-area="" asp-controller="access" asp-action="login">Iniciar Sesión</a>
+    </div>
+}
+else
+{
+
+    <div class="col-xs-1">
+        <h1 class="display-5">Su usuario ya fue aprobado</h1>
+        <a class="btn btn-success" asp-area="" asp-controller="home" asp-action="index">Volver al inicio</a>
+    </div>
+}

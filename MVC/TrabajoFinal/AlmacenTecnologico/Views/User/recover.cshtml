@@ -1,0 +1,57 @@
+﻿@model List<AlmacenTecnologico.Models.ViewModel.UsuarioViewModel>
+@{
+    ViewData["Title"] = "Panel Usuarios";
+}
+<div class="text-center">
+    <h1 class="display-4">Panel Usuarios</h1>
+    <hr />
+</div>
+<div class="mb-3">
+    @if (Model is not null && Model.Count > 0)
+    {
+        <form method="post">
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>#</th>
+                    <th>Nombre Usuario</th>
+                    <th>Rol</th>
+                    <th>Identificador Empleado</th>
+                    <th>Empleado</th>
+                    <th colspan="2">Estado</th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.NombreUsuario</td>
+                        <td>@item.Rol.Nombre</td>
+                        <td>@item.Persona?.Id </td>
+                        <td>@item.Persona?.Nombre</td>
+                        <td>@item.EstadoString</td>
+                        <td>
+                            @if (User.IsInRole("superadmin"))
+                            {
+                                <input type="submit" class="btn btn-danger" asp-area="" asp-controller="user" asp-action="recover" asp-route-id="@item.Id" value="Recuperar">
+                            }
+                            else
+                            {
+                                <input class="btn btn-secondary" value="Editar" onclick="alert('Debes ser administrador para realizar esta acción')" />
+                                <input class="btn btn-secondary" value="Eliminar" onclick="alert('Debes ser administrador para realizar esta acción')" />
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        </form>
+    }
+    else
+    {
+        <div class="text-center">
+            <p>No hay usuarios eliminados en el sistema :(</p>
+            <a class="btn btn-success" asp-area="" asp-controller="user" asp-action="index">Volver al dashboard</a>
+        </div>
+    }
+
+</div>
