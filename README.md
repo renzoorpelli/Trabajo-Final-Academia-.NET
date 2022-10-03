@@ -10,5 +10,5 @@
 
 # Diagrama
 
- ![alt text](https://github.com/[renzoorpelli]/[Trabajo-Final-Academia-.NET]/images/diagram.jpg?raw=true)
+ ![alt text](https://github.com/renzoorpelli/Trabajo-Final-Academia-.NET/blob/main/images/diagram.png)
 
